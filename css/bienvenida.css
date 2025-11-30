@@ -436,10 +436,11 @@ footer a {
         position: absolute; 
         right: 20px; 
         top: 0px;            
-        bottom: 0;         
-        margin: auto 0;    /* TRUCO CLAVE para centrar verticalmente */
+        bottom: 0px;         
+        margin: 0px;    /* TRUCO CLAVE para centrar verticalmente */
         height: 45px;      
         width: 45px;
+        
     }
 
     /* 2. CONVERTIR LA LISTA EN ACORDEÓN (ocultar por defecto) */
@@ -494,6 +495,7 @@ footer a {
     main {
     padding-top: 250px; /* Compensa la altura de header + nav */
 }
+
     
 
     .tutores-section, .contacto-section {
