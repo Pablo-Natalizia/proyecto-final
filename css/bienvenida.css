@@ -489,9 +489,11 @@ footer a {
 
 /* --- Media Query para Móviles más pequeños (hasta 480px) --- */
 @media (max-width: 480px) {
+    
     main {
-        padding: 16px;
-    }
+    padding-top: 250px; /* Compensa la altura de header + nav */
+}
+    
 
     .tutores-section, .contacto-section {
         padding: 16px;
