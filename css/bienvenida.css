@@ -389,6 +389,7 @@ footer a {
     
     .logo {
         margin-right: 0px; 
+        margin-left: 0px;
     }
     
     /* Centra el logo y el header-content en mobile */
