@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreceYa - Conecta tutores y Aprendices</title>
+    <link rel="stylesheet" href="../css/bienvenida.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <script src="../js/index.js"></script>
+    
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="header-text">
+            <img src="../media/img/logo.png" alt="Logo CreceYa" class="logo">
+            <p>Conecta tutores y talentos</p>
+        </div>
+    </div>
+</header>
 
+<nav id="main-nav">
+        <button class="menu-toggle" id="menu-toggle-btn" aria-expanded="false" aria-controls="nav-list-menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        
+        <ul class="nav-list" id="nav-list-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tutores">Tutores</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+
+    <main>
+        <section id="inicio" class="intro-section">
+            <h1>Bienvenido a CreceYa</h1>
+            <p>Ofrece o encuentra mentorías en diseño, programación, idiomas y más. Conecta, aprende y crece.</p>
+            <!-- Multimedia: Iframe de video introductorio -->
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9eMWIUUh-2E" title="Video Introductorio" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="tutores" class="tutores-section">
+            <h2>Nuestros tutores</h2>
+            <p>Explora perfiles de tutores disponibles y agenda una sesión.</p><br>
+
+            <div class="tutores-grid">
+                <div class="mentor-card">
+                    <img src="../media/img/programacion.png" alt="Mentor de Programación">
+                    <h3>Nicolás Elias Rivera<br>-Programación-</h3>
+                    <p>Experto en JavaScript y Python. Ofrece sesiones semanales.</p>
+                    <a href="#contacto" class="btn">Contactar</a>
+              </div>
+                <div class="mentor-card">
+                    <img src="../media/img/disen.png" alt="Mentor de Diseño">
+                    <h3>Sofía Rodríguez Saa<br>
+                            -Diseño-</h3>
+                    <p>Especialista en UI/UX. Mentorías para principiantes.</p>
+                    <a href="#contacto" class="btn">Contactar</a>
+                </div>
+                <div class="mentor-card">
+                    <img src="../media/img/idiomas.png" alt="Mentor de Idiomas">
+                    <h3>Pablo Natalizia<br>-Idiomas-</h3>
+                    <p>Profesor de inglés conversacional. Clases interactivas grupales.</p>
+                    <a href="#contacto" class="btn">Contactar</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="reseñas" class="reseñas-section">
+            <h2>Reseñas de Aprendices</h2>
+            <div class="reseñas-grid">
+                <!-- Grid para reseñas -->
+                <div class="reseña-card">
+                    <p>"¡Gracias a CreceYa, mejoré mi programación en solo un mes!"</p>
+                    <cite>- Pablo G., Aprendiz</cite>
+                </div>
+                <div class="reseña-card">
+                    <p>"El tutor de diseño fue increíble. Recomendado al 100%."</p>
+                    <cite>- Nicolás M., Aprendiz</cite>
+                </div>
+                <div class="reseña-card">
+                    <p>"Sesiones gratuitas de idiomas que realmente funcionan."</p>
+                    <cite>- Sofia R., Aprendiz</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto-section">
+            <h2>Contacto y Agenda</h2>
+           
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/xvgwvgeg" method="POST" target="_blank">      
+                
+                <p>Envía un mensaje para agendar una mentoría o crear tu perfil como mentor.</p>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 CreceYa. Conecta y crece. | <a href="#privacidad">Política de Privacidad</a></p>
+    </footer>
+</body>
+</html>
