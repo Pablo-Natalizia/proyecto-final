@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreceYa - Login</title>
+  
+  <link rel="stylesheet" href="css/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<header>
+    <div class="header-content">
+        <div class="header-text">
+            <img src="media/img/logo.png" alt="Logo CreceYa" class="logo">
+        </div>
+    </div>
+</header>
+
+  <main class="login-main">
+    <section class="login-section">
+      <h2>Iniciar Sesión</h2>
+      
+      <div id="empty_email_error" class="error"></div>
+      <div id="empty_psw_error" class="error"></div>
+      <div id="login_error_error" class="error"></div>
+      
+      <form id="form_login" novalidate>
+        <input id="id_mail" type="email" placeholder="Ingrese su email"> 
+        <input id="id_psw" type="password" name="pass" id="pass" placeholder="Ingrese su contraseña"> 
+        <button type="button" id="btn_login" class="btn">Ingresar</button> 
+        
+        <p class="credentials">
+            <br>
+            <br>
+          (Nico: el email válido = "<strong>admin@admin.com</strong>" & password válido = "<strong>admin123</strong>")
+        </p>
+      </form>
+    </section>
+  </main>
+
+    <footer>
+      <p>&copy; 2025 CreceYa. Conecta y crece. | <a href="#privacidad">Política de Privacidad</a></p>
+    </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
