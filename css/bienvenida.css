@@ -138,7 +138,7 @@ nav {
 .scrolled .nav-list a {
     /* Reducimos el padding vertical a 0 o a un valor muy pequeño 
        para permitir que 'align-items: center' del NAV funcione */
-    padding: 0 16px; 
+    padding: 0px 16px; 
     
     /* Agregamos la transición para que el cambio sea suave */
     transition: padding 0.3s ease-out;
@@ -146,7 +146,7 @@ nav {
 
 /* Opcional: Asegúrate que el li tenga margen 0 para no interferir */
 .scrolled .nav-list li {
-    margin: 0 16px;
+    margin: 0px;
 }
 
 .nav-list a {
@@ -435,7 +435,7 @@ footer a {
         /* CENTRADO VERTICAL ABSOLUTO dentro del NAV */
         position: absolute; 
         right: 20px; 
-        top: 0;            
+        top: 0px;            
         bottom: 0;         
         margin: auto 0;    /* TRUCO CLAVE para centrar verticalmente */
         height: 45px;      
@@ -451,13 +451,14 @@ footer a {
         background-color: #333; 
         position: absolute;
         top: 100%; 
-        left: 0;
+     
         padding: 0;
     }
     
     /* 3. CLASE PARA MOSTRAR EL MENÚ (añadida con JS) */
     .nav-list.open {
         display: flex; 
+        
     }
     
     /* 4. Estilos de los elementos de la lista */
@@ -470,7 +471,7 @@ footer a {
     .nav-list a {
         display: block; 
         text-align: center;
-        padding: 15px 16px;
+        padding:  15px 16px;
     }
     
     /* 5. Asegurar que el NAV mantenga su posición fija */
