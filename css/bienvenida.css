@@ -42,7 +42,7 @@ header {
 
 /* Estilo para cuando se activa el scroll */
 .scrolled header {
-    height: 50px; 
+    height: 80px; 
 }
 
 /* --- Contenido del Header (Logo y Texto) --- */
@@ -63,16 +63,16 @@ header {
     width: 100px; /* Tamaño inicial */       
     min-width: 100px;
     height: auto;
-    margin-left: 30px;
-
+    margin-left: 30px; 
+    margin-right: 30px; 
     /* Transición para achicamiento suave */
     transition: width 0.3s ease-out, min-width 0.3s ease-out; 
 }
 
 /* NUEVO: Achicar logo al hacer scroll */
 .scrolled .logo {
-    width: 40px; 
-    min-width: 40px;
+    width: 60px; 
+    min-width: 60px;
 }
 
 /* CORRECCIÓN: Alinea el logo y el texto secundario (p) horizontalmente */
@@ -115,7 +115,7 @@ nav {
 
 /* Estilo para la barra de navegación cuando el header se contrae */
 .scrolled nav {
-    top: 50px; /* Debajo del header contraído */
+    top: 80px; /* Debajo del header contraído */
     
     /* Centrado vertical al hacer scroll */
     height: 50px; /* Altura fija para centrar */
@@ -388,7 +388,7 @@ footer a {
 @media (max-width: 768px) {
     
     .logo {
-         margin-left: 0px; 
+        margin-right: 0px; 
     }
     
     /* Centra el logo y el header-content en mobile */
@@ -495,70 +495,4 @@ footer a {
     .tutores-section, .contacto-section {
         padding: 16px;
     }
-}
-
-
-body {
-    /* Mantiene los estilos existentes (fuente, background) */
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-image: url('../media/img/bg.png');
-    background-repeat: repeat;
-    background-size: 300px 300px;
-    background-attachment: fixed;
-    
-    /* PROPIEDADES CLAVE PARA STICKY FOOTER */
-    display: flex;             /* Habilita Flexbox */
-    flex-direction: column;    /* Organiza los hijos (header, main, footer) verticalmente */
-    min-height: 100vh;         /* Asegura que el body ocupe al menos la altura total de la vista */
-}
-
-/* --- ESTILOS DE MAIN --- */
-.login-main {
-    /* Mantiene los estilos existentes (centrado) */
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 50px 20px;
-    max-width: none;
-    margin: 0 auto;
-
-    /* PROPIEDAD CLAVE PARA STICKY FOOTER */
-    flex-grow: 1;              /* Hace que el main ocupe todo el espacio disponible entre el header y el footer */
-}
-
-/* Estilos de la caja del formulario de Login */
-.login-section {
-    /* Fondo del formulario */
-    background: white; 
-    
-    /* Espacio interno */
-    padding: 40px; 
-    
-    /* Bordes redondeados */
-    border-radius: 10px; 
-    
-    /* Sombra (Marco y efecto de elevación) */
-    box-shadow: 
-        0 4px 15px rgba(0, 0, 0, 0.2), /* Sombra principal para elevación */
-        0 0 0 1px rgba(0, 0, 0, 0.05); /* Borde sutil y fino */
-        
-    /* Ancho */
-    width: 100%;
-    max-width: 350px; 
-    text-align: center;
-}
-
-/* --- ESTILOS DE FOOTER --- */
-footer {
-    /* Estilos existentes */
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    
-    /* Aseguramos que el footer no tenga nada que lo empuje */
-    margin-top: 0;
-    width: 100%;
 }
